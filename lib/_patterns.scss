@@ -19,7 +19,7 @@
   // gradient is applied to it's own element because overflow visible is not honored by ie when filter is present
   .fill {
     background:#222;
-    @include gradient-vertical(#333, #222);
+    @include background-image(linear-gradient(#333, #222));
     $shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
     @include box-shadow($shadow);
   }
@@ -295,7 +295,7 @@ footer {
 // One-liner alert bars
 .alert-message {
   // TODO: Ask cloudhead how to do this fancy filter elegantly. Less eval is returning strings with quotes ;_;
-  @include gradient-vertical(transparent, rgba(0,0,0,0.15));
+  @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.15)));
   filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#15000000')";
   background-color: $grayLighter;
   margin-bottom: $baseline;
@@ -312,19 +312,19 @@ footer {
     }
   }
   &.error {
-    @include gradient-vertical(lighten($red, 30%), lighten($red, 15%));
+    @include background-image(linear-gradient(lighten($red, 30%), lighten($red, 15%)));
     border-bottom-color: lighten($red, 5%);
   }
   &.warning {
-    @include gradient-vertical(lighten($yellow, 25%), lighten($yellow, 10%));
+    @include background-image(linear-gradient(lighten($yellow, 25%), lighten($yellow, 10%)));
     border-bottom-color: $yellow;
   }
   &.success {
-    @include gradient-vertical(lighten($green, 25%), lighten($green, 10%));
+    @include background-image(linear-gradient(lighten($green, 25%), lighten($green, 10%)));
     border-bottom-color: $green;
   }
   &.info {
-    @include gradient-vertical(lighten($blue, 25%), lighten($blue, 5%));
+    @include background-image(linear-gradient(lighten($blue, 25%), lighten($blue, 5%)));
     border-bottom-color: $blue;
   }
   .close {
