@@ -97,6 +97,8 @@ a {
 // Buttons
 @mixin btnColor($primaryColor, $secondaryColor) {
   @include background-image(linear-gradient($primaryColor, $secondaryColor));
+  background-color: $secondaryColor;
+  background-repeat: no-repeat;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   border-color: $secondaryColor $secondaryColor darken($secondaryColor, 15%);
   border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
@@ -106,7 +108,9 @@ a {
   // .button(#1174C6);
   cursor: pointer;
   display: inline-block;
-  @include background-image(linear-gradient(left, #fff, darken(#fff, 10%)));
+  @include background-image(linear-gradient(#fff, darken(#fff, 10%)));
+  background-repeat: no-repeat;
+  background-color: darken(#fff, 10%);
   padding: 4px 14px;
   text-shadow: 0 1px 1px rgba(255,255,255,.75);
   color: #333;
