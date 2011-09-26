@@ -1,0 +1,140 @@
+/* Variables.less
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
+
+
+// Clearfix for clearing floats like a boss h5bp.com/q
+.clearfix {
+  zoom: 1;
+	&:before,
+  &:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline;
+	}
+	&:after {
+    clear: both;
+	}
+}
+
+// Center-align a block level element
+.center-block {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sizing shortcuts
+@mixin size($height: 5px, $width: 5px) {
+	height: $height;
+	width: $width;
+}
+@mixin square($size: 5px) {
+	@include size($size, $size);
+}
+
+// Input placeholder text
+@mixin placeholder($color: $grayLight) {
+  :-moz-placeholder {
+    color: $color;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+// Font Stacks
+@mixin font-shorthand($weight: normal, $size: 14px, $lineHeight: 20px) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+@mixin font-sans-serif($weight: normal, $size: 14px, $lineHeight: 20px) {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+@mixin font-serif($weight: normal, $size: 14px, $lineHeight: 20px) {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+@mixin font-monospace($weight: normal, $size: 12px, $lineHeight: 20px) {
+  font-family: "Monaco", Courier New, monospace;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+// Grid System
+.fixed-container {
+  width: $siteWidth;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .clearfix;
+}
+@mixin columns($columnSpan: 1) {
+  width: ($gridColumnWidth * $columnSpan) + ($gridGutterWidth * ($columnSpan - 1));
+}
+@mixin offset($columnOffset: 1) {
+  margin-left: ($gridColumnWidth * $columnOffset) + ($gridGutterWidth * ($columnOffset - 1)) + $extraSpace;
+}
+// Necessary grid styles for every column to make them appear next to each other horizontally
+.gridColumn {
+  display: inline;
+  float: left;
+  margin-left: $gridGutterWidth;
+}
+// makeColumn can be used to mark any element (e.g., .content-primary) as a column without changing markup to .span something
+@mixin makeColumn($columnSpan: 1) {
+  @extend .gridColumn;
+  @include columns($columnSpan);
+}
+
+// Transitions
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+	        transition: $transition;
+}
+
+// Background clipping
+@mixin background-clip($clip) {
+	-webkit-background-clip: $clip;
+	   -moz-background-clip: $clip;
+	        background-clip: $clip;
+}
+
+// CSS3 Content Columns
+@mixin content-columns($columnCount, $columnGap: 20px) {
+	-webkit-column-count: $columnCount;
+	   -moz-column-count: $columnCount;
+          column-count: $columnCount;
+  -webkit-column-gap: $columnGap;
+	   -moz-column-gap: $columnGap;
+          column-gap: $columnGap;
+}
+
+@mixin gradient-bar($primaryColor, $secondaryColor) {
+	@include background-image(linear-gradient($primaryColor, $secondaryColor));
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	border-color: $secondaryColor $secondaryColor darken($secondaryColor, 15%);
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+}
+
+// Reset filters for IE
+.reset-filter {
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
+}
+
+// Add an alphatransparency value to any background or border color (via Elyse Holladay)
+@mixin translucent-background($color: $white, $alpha: 1) {
+  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+}
+@mixin translucent-border($color: $white, $alpha: 1) {
+  border-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+  background-clip: padding-box;
+}
