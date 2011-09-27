@@ -65,7 +65,7 @@
     float: left;
     margin: 5px 0 0 0;
     position: relative;
-    @include opacity(100);
+    @include opacity(1);
   }
   // Todo: remove from v2.0 when ready, added for legacy
   form.pull-right {
@@ -235,7 +235,7 @@ a.menu:after,
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid $white;
-  @include opacity(50);
+  @include opacity(0.50);
 }
 // The dropdown menu (ul)
 // .menu-dropdown for backwards compatibility
@@ -568,7 +568,7 @@ footer {
     cursor: default;
     background-image: none;
     @extend .reset-filter;
-    @include opacity(65);
+    @include opacity(0.65);
     @include box-shadow(none);
   }
   &[disabled] {
@@ -577,7 +577,7 @@ footer {
     cursor: default;
     background-image: none;
     @extend .reset-filter;
-    @include opacity(65);
+    @include opacity(0.65);
     @include box-shadow(none);
   }
 
@@ -618,11 +618,11 @@ input[type=submit].btn {
   font-weight: bold;
   line-height: $baseline * .75;
   text-shadow: 0 1px 0 rgba(255,255,255,1);
-  @include opacity(20);
+  @include opacity(0.20);
   &:hover {
     color: $black;
     text-decoration: none;
-    @include opacity(40);
+    @include opacity(0.40);
   }
 }
 
@@ -784,7 +784,7 @@ input[type=submit].btn {
 }
 
 .modal-backdrop, .modal-backdrop.fade.in {
-  @include opacity(80);
+  @include opacity(0.80);
 }
 
 .modal {
@@ -876,9 +876,9 @@ input[type=submit].btn {
   padding: 5px;
   font-size: 11px;
   z-index: 1000;
-  @include opacity(80);
+  @include opacity(0.80);
   &.fade.in {
-    @include opacity(80);
+    @include opacity(0.80);
   }
   &.above .twipsy-arrow   { @include above; }
   &.left .twipsy-arrow    { @include left; }

@@ -1707,8 +1707,8 @@ table .headerSortDown.purple {
   float: left;
   margin: 5px 0 0 0;
   position: relative;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
-  opacity: 100;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 /* line 71, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .topbar form.pull-right {
@@ -1944,8 +1944,8 @@ a.menu:after,
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
-  opacity: 50;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
 
 /* line 243, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
@@ -2379,8 +2379,8 @@ footer {
 .btn.disabled {
   cursor: default;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=6500);
-  opacity: 65;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
@@ -2390,8 +2390,8 @@ footer {
 .btn[disabled] {
   cursor: default;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=6500);
-  opacity: 65;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
@@ -2436,15 +2436,15 @@ input[type=submit].btn::-moz-focus-inner {
   font-weight: bold;
   line-height: 13.5px;
   text-shadow: 0 1px 0 white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=2000);
-  opacity: 20;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 }
 /* line 622, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .close:hover {
   color: black;
   text-decoration: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=4000);
-  opacity: 40;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
 }
 
 /* line 634, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
@@ -2647,8 +2647,8 @@ input[type=submit].btn::-moz-focus-inner {
 
 /* line 786, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .modal-backdrop, .modal-backdrop.fade.in {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=8000);
-  opacity: 80;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 
 /* line 790, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
@@ -2736,13 +2736,13 @@ input[type=submit].btn::-moz-focus-inner {
   padding: 5px;
   font-size: 11px;
   z-index: 1000;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=8000);
-  opacity: 80;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 /* line 880, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .twipsy.fade.in {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=8000);
-  opacity: 80;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 /* line 883, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .twipsy.above .twipsy-arrow {
