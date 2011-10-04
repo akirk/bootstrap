@@ -2931,34 +2931,35 @@ input[type=submit].btn::-moz-focus-inner {
   -ms-border-radius: 3px;
   -khtml-border-radius: 3px;
   border-radius: 3px;
+  white-space: nowrap;
 }
-/* line 974, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 975, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .label.important {
   background-color: #c43c35;
 }
-/* line 975, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 976, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .label.warning {
   background-color: #f89406;
 }
-/* line 976, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 977, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .label.success {
   background-color: #46a546;
 }
-/* line 977, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 978, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .label.notice {
   background-color: #62cffc;
 }
 
-/* line 984, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 985, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .media-grid {
   margin-left: -20px;
   margin-bottom: 0;
 }
-/* line 988, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 989, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .media-grid li {
   display: inline;
 }
-/* line 991, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 992, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .media-grid a {
   float: left;
   padding: 4px;
@@ -2975,11 +2976,11 @@ input[type=submit].btn::-moz-focus-inner {
   -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-/* line 998, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 999, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .media-grid a img {
   display: block;
 }
-/* line 1001, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
+/* line 1002, /Users/alex/Sites/bootstrap/lib/_patterns.scss */
 .media-grid a:hover {
   border-color: #0069d6;
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);

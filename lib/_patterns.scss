@@ -971,6 +971,7 @@ input[type=submit].btn {
   color: $white;
   text-transform: uppercase;
   @include border-radius(3px);
+  white-space: nowrap;
   &.important { background-color: #c43c35; }
   &.warning   { background-color: $orange; }
   &.success   { background-color: $green; }
