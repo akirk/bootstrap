@@ -3,11 +3,8 @@ TWITTER BOOTSTRAP with sass
 
 Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more.
 
-<<<<<<< HEAD
 This is fork has been adapted to work with [compass](http://www.compass-style.org/).
 
-To get started -- checkout http://twitter.github.com/bootstrap!
-=======
 To get started -- checkout http://twitter.github.com/bootstrap!
 
 
@@ -118,4 +115,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
->>>>>>> upstream/master
